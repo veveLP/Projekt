@@ -16,5 +16,27 @@ namespace Projekt
         {
             InitializeComponent();
         }
+
+        private void prumer_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                label1.Text = listBox1.SelectedItem.ToString();
+                label2.Text = listBox1.SelectedItem.ToString();
+                label3.Text = listBox1.SelectedItem.ToString();
+
+                int cislo1 = Convert.ToInt32(textBox1.Text);
+                int cislo2 = Convert.ToInt32(textBox2.Text);
+                int cislo3 = Convert.ToInt32(textBox3.Text);
+
+                double vysledek = (cislo1 + cislo2 + cislo3) / 3;
+
+                MessageBox.Show("Aritmetrický průměr čísel v textBoxech je " + vysledek, "Výsledek");
+            }
+            catch
+            {
+                MessageBox.Show("Musíš vybrat prvek v listBoxu a zadat hodnoty čísel!", "Error");
+            }
+        }
     }
 }
