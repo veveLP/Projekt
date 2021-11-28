@@ -101,6 +101,9 @@
     <EmbeddedResource Include="Ukol3.resx">
       <DependentUpon>Ukol3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ukol4.resx">
+      <DependentUpon>Ukol4.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
