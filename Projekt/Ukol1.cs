@@ -57,5 +57,28 @@ namespace Projekt
             }
             textBox1.Text = nwtext.ToUpper();
         }
+
+        private void button31_Click(object sender, EventArgs e)
+        {
+            string nwtext = "";
+            int numb = 3;
+            string text = textBox1.Text;
+            text = text.ToLower();
+            char[] znaky = text.ToCharArray();
+            for (int i = 0; i < text.Length; i++)
+            {
+                if (znaky[i].ToString() == " " || znaky[i].ToString() == "." || znaky[i].ToString() == "," || znaky[i].ToString() == "!" || znaky[i].ToString() == "?") { }
+                else
+                {
+                    int temp = (int)znaky[i];
+                    temp -= numb;
+                    if (temp < 122-25) { temp += 26; }
+                    znaky[i] = (char)temp;
+                }
+                nwtext += znaky[i].ToString();
+
+            }
+            textBox1.Text = nwtext.ToUpper();
+        }
     }
 }
