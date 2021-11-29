@@ -61,27 +61,24 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(113, 75);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(30, 13);
+            this.label3.Size = new System.Drawing.Size(0, 13);
             this.label3.TabIndex = 5;
-            this.label3.Text = "text3";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(113, 49);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 13);
+            this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 4;
-            this.label2.Text = "text2";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(113, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(30, 13);
+            this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 3;
-            this.label1.Text = "text1";
             // 
             // textBox3
             // 
@@ -144,6 +141,7 @@
             this.MaximizeBox = false;
             this.Name = "Ukol3";
             this.Text = "Ukol3";
+            this.Load += new System.EventHandler(this.Ukol3_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

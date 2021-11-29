@@ -29,14 +29,19 @@ namespace Projekt
                 int cislo2 = Convert.ToInt32(textBox2.Text);
                 int cislo3 = Convert.ToInt32(textBox3.Text);
 
-                double vysledek = (cislo1 + cislo2 + cislo3) / 3;
+                double vysledek = ((double)cislo1 + (double)cislo2 + (double)cislo3) / 3;
 
-                MessageBox.Show("Aritmetrický průměr čísel v textBoxech je " + vysledek, "Výsledek");
+                MessageBox.Show("Aritmetrický průměr čísel v textBoxech je " + Math.Round(vysledek,2), "Výsledek");
             }
             catch
             {
                 MessageBox.Show("Musíš vybrat prvek v listBoxu a zadat hodnoty čísel!", "Error");
             }
+        }
+
+        private void Ukol3_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
